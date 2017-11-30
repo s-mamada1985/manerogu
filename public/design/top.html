@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<title>top - design</title>
+<style>
+body {
+    width:1024px;
+    height:500px;
+}
+div{
+    box-sizing:border-box;
+        
+    }
+#header {
+    width:100%;
+    height:10%;
+    border:1px solid #000;
+}
+#contents {
+    width:100%;
+    height:80%;
+    border:1px solid #000;
+}
+#footer {
+    width:100%;
+    height:10%;
+    border:1px solid #000;
+}
+#calendar {
+    width:610px;
+    height:100%;
+    border:1px solid #f00;
+    float:left;
+}
+#graph {
+    width:410px;
+    height:100%;
+    border:1px solid #f00;
+    float:left;
+    box-sizing: 
+}
+#syukei{
+    /*width:400px;*/
+    height:50%;
+    border:1px solid #f00;
+    clear: both;
+    box-sizing:border-box;
+}
+#syuusi{
+    /*width:400px;*/
+    height:50%;
+    border:1px solid #f00;
+    margin-bottom;
+    box-sizing:border-box;
+}
+.btn {
+    display:inline-block;
+    border:1px solid #00;
+    background-color:#808080;
+    text-decoration: none;
+    padding:5px;
+    margin:5px;
+    width:100px;
+    text-align: center;
+    color:#fff;
+    border-radius: 5px;
+}
+    
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.2/fullcalendar.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.2/fullcalendar.print.css"/>
+<script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/locale/ja.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.6.2/fullcalendar.min.js"></script>
+<script>
+$(function() {
+    $('#calendar').fullCalendar();
+});
+</script>
+</head>
+<body>
+    <div id="header">
+        <a href="" title="集計" id="summary" class="btn">集計</a>
+        <a href="" title="設定" id="setting" class="btn">設定</a>
+        <a href="" title="ユーザ情報" id="userInfo" class="btn">ユーザ情報</a>
+        <a href="" title="ログアウト" id="logout" class="btn">ログアウト</a>
+    </div>
+    <div id="contents">
+        <div id="wCalendar">
+            <div id="calendar">
+            </div>
+        </div>
+        <div id="graph">
+            <div id="syukei">syukei</div>
+            <div id="syuusi">syuusi</div>
+        </div>
+    </div>
+    <div id="footer">
+        FOOTER<
+    </div>
+</body>
+</html>
